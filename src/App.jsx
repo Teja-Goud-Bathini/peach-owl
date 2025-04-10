@@ -1,25 +1,29 @@
-import Navbar from "./components/Header";
-import Hero from "./components/Hero";
-import ProductGrid from "./components/ProductGrid";
-import AboutSection from "./components/AboutSection";
-import ContactForm from "./components/Newsletter";
-import Footer from "./components/Footer";
-import LandingPage from "./components/Landing";
+// App.jsx
+
+import { Button } from "./components/ui/button"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Features from "./components/Features"
+import Products from "./components/Products"
+import Contact from "./components/Contact"
+import LimitedOffer from "./components/LimitedOffer"
+import Footer from "./components/Footer"
+
 function App() {
   return (
-    <div>
-    {/* // <div className="min-h-screen bg-gradient-to-b from-green-50 to-white"> */}
-      {/* <Navbar />
-      <main>
+    <div className="flex min-h-screen flex-col">
+     
+      <Header />
+      <main className="flex-1">
         <Hero />
-        <ProductGrid />
-        <AboutSection />
-        <ContactForm />
+        <Features />
+        <Products />
+        <Contact />
+        <LimitedOffer />
       </main>
-      <Footer /> */}
-        <LandingPage />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
